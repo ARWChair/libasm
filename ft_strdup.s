@@ -24,4 +24,5 @@ ft_strdup:
 ft_strdup_bad_alloc:
 	call __errno_location
 	mov word[rax], 12
+ 	mov rax, 0
 	jmp ft_strdup_end
