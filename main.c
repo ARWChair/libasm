@@ -48,12 +48,25 @@ int main() {
 
     // printf("%i\n", strcmp("test", "tt"));
     // printf("%i\n", strcmp("test", "test"));
-    // printf("%i\n", strcmp("test", "test1000000000000"));
+    // printf("%i\n", strcmp("text", "text"));
     // printf("%i\n", strcmp("test10000", "test"));
     // printf("---------------------------------\n");
     // printf("%i\n", ft_strcmp("test", "tt"));
     // printf("%i\n", ft_strcmp("test", "test"));
     // printf("%i\n", ft_strcmp("test", "test1000000000000"));
     // printf("%i\n", ft_strcmp("test10000", "test"));
-    printf("%i\n", ft_strcmp("test", "test"));
+    // printf("%i\n", strcmp("test3", "test"));
+    // printf("%i\n", ft_strcmp("test3", "test"));
+    // printf("---------------------------------\n");
+    char src[] = "BBBB";
+    char dest[] = "BB";
+    printf("%s, %s\n", src, dest);
+    printf("%s\n", strcpy(dest, src));
+    printf("%s, %s\n", src, dest);
+
+    char src2[] = "BBBB";
+    char dest2[] = "BB";
+    printf("%s, %s\n", src2, dest2);
+    printf("%s\n", ft_strcpy(dest2, src2));
+    printf("%s, %s\n", src2, dest2);
 }
