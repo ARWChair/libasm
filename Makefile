@@ -1,5 +1,5 @@
 # SRCS = ft_read.s  ft_strcmp.s  ft_strcpy.s  ft_strdup.s  ft_strlen.s  ft_write.s
-SRCS = ft_strlen.s ft_write.s ft_read.s ft_strcmp.s ft_strcpy.s
+SRCS = ft_strlen.s ft_write.s ft_read.s ft_strcmp.s ft_strcpy.s ft_strdup.s
 NASM = nasm -f elf64
 OBJ = $(SRCS:.s=.o)
 NAME = libasm.a

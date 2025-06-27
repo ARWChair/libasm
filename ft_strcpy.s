@@ -3,7 +3,6 @@ global ft_strcpy
 
 ft_strcpy:
     mov rdx, 0
-    mov rdi, 0
     jmp ft_strcpy_loop
 
 ft_strcpy_loop:
@@ -15,6 +14,8 @@ ft_strcpy_loop:
     jmp ft_strcpy_loop
 
 ft_strcpy_end:
+    mov al, byte [rsi + rdx]
+    mov byte [rdi + rdx], al
     mov rax, rdi
     mov rdx, 0
     ret

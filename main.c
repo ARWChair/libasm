@@ -58,15 +58,43 @@ int main() {
     // printf("%i\n", strcmp("test3", "test"));
     // printf("%i\n", ft_strcmp("test3", "test"));
     // printf("---------------------------------\n");
-    char src[] = "BBBB";
-    char dest[] = "BB";
-    printf("%s, %s\n", src, dest);
-    printf("%s\n", strcpy(dest, src));
-    printf("%s, %s\n", src, dest);
+    // char src[] = "A";
+    // char dest[] = "A";
+    // printf("%s, %s\n", src, dest);
+    // printf("%s\n", strcpy(dest, src));
+    // printf("%s, %s\n", src, dest);
 
-    char src2[] = "BBBB";
-    char dest2[] = "BB";
-    printf("%s, %s\n", src2, dest2);
-    printf("%s\n", ft_strcpy(dest2, src2));
-    printf("%s, %s\n", src2, dest2);
+    // char src2[] = "A";
+    // char dest2[] = "A";
+    // printf("%s, %s\n", src2, dest2);
+    // printf("%s\n", ft_strcpy(dest2, src2));
+    // printf("%s, %s\n", src2, dest2);
+    char * str = strdup("ab");
+    char * str2 = ft_strdup("ab");
+    printf("%p\n", str);
+    printf("%p\n", str2);
+    printf("%i\n", str);
+    printf("%i\n", str2);
+    printf("%c\n", str);
+    printf("%c\n", str2);
+    printf("%s\n", str);
+    printf("%s\n", str2);
+
+    printf("%i, %i, %i\n", str[0], str[1], str[2]);
+    printf("%i, %i, %i\n", str2[0], str2[1], str2[2]);
+
+    const char *fail = "";
+    const char *fail2 = "";
+    char * str3 = strdup(fail);
+    char * str4 = ft_strdup(fail2);
+    printf("%p\n", str3);
+    printf("%p\n", str4);
+    printf("%i\n", str3);
+    printf("%i\n", str4);
+    printf("%c\n", str3);
+    printf("%c\n", str4);
+    printf("%i\n", str3[0]);
+    printf("%i\n", str4[0]);
+    printf("%s\n", str3);
+    printf("%s\n", str4);
 }
